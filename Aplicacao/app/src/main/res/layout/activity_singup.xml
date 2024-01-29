@@ -64,14 +64,14 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:id="@+id/submit_button"
+        android:id="@+id/submitBtn"
         android:text="Singup"
         android:layout_margin="12dp"
         android:padding="12dp"/>
     <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:id="@+id/submit_btn"
+        android:id="@+id/progressBar"
         android:layout_margin="12dp"
         android:visibility="gone"
         android:padding="12dp"/>
