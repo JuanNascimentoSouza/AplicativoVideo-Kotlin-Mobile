@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:layout_margin="16dp"
-    tools:context=".SingupActivity">
+    tools:context=".SignupActivity">
 
     <ImageView
         android:layout_width="120dp"
@@ -32,7 +32,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Singup"
+        android:text="Signup"
         android:gravity="center"
         android:textStyle="bold"
         android:textSize="32sp"
@@ -65,7 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:id="@+id/submitBtn"
-        android:text="Singup"
+        android:text="Signup"
         android:layout_margin="12dp"
         android:padding="12dp"/>
     <ProgressBar
