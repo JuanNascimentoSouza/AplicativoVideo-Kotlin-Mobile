@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Aplicacao"
         tools:targetApi="31">
         <activity
+            android:name=".VideoUploadActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false">
             <intent-filter>

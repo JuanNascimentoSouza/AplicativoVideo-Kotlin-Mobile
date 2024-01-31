@@ -1,13 +1,15 @@
 package com.example.aplicacao
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.aplicacao.databinding.ActivityMainBinding
 import com.example.aplicacao.util.UiUtil
 
-lateinit var binding : ActivityMainBinding
-
 class MainActivity : AppCompatActivity() {
+
+    lateinit var binding : ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -19,7 +21,7 @@ class MainActivity : AppCompatActivity() {
                     UiUtil.showToast(this,"Add video")
                 }
                 R.id.bottom_menu_add_video->{
-                    UiUtil.showToast(this,"Add video")
+                    startActivity(Intent(this,VideoUploadActivity::class.java))
                 }
                 R.id.bottom_menu_profile->{
                     UiUtil.showToast(this,"Add video")
