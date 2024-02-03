@@ -13,7 +13,6 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.example.aplicacao.databinding.ActivityVideoUploadBinding
 import com.example.aplicacao.model.VideoModel
 import com.example.aplicacao.util.UiUtil
 import com.google.firebase.Timestamp
@@ -21,6 +20,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
+import np.com.bimalkafle.miniclip.databinding.ActivityVideoUploadBinding
 
 
 class VideoUploadActivity : AppCompatActivity() {

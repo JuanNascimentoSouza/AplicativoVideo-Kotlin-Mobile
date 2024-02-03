@@ -5,12 +5,12 @@ import android.os.Bundle
 import android.util.Patterns
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aplicacao.databinding.ActivitySingupBinding
 import com.example.aplicacao.model.UserModel
 import com.example.aplicacao.util.UiUtil
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import np.com.bimalkafle.miniclip.databinding.ActivitySingupBinding
 
 class SignupActivity : AppCompatActivity() {
 

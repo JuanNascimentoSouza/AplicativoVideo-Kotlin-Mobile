@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:layout_margin="16dp"
-    tools:context=".SignupActivity">
+    tools:context="com.example.aplicacao.SignupActivity">
 
     <ImageView
         android:layout_width="120dp"

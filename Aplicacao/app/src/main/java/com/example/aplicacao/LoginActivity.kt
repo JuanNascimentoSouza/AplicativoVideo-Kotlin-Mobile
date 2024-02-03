@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.view.View
-import com.example.aplicacao.databinding.ActivityLoginBinding
 import com.example.aplicacao.util.UiUtil
 import com.google.firebase.auth.FirebaseAuth
+import np.com.bimalkafle.miniclip.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
 
