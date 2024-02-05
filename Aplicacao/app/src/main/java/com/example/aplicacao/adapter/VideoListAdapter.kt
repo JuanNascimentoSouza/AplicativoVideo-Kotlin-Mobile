@@ -1,15 +1,18 @@
 package com.example.aplicacao.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
+import com.example.aplicacao.ProfileActivity
 import com.example.aplicacao.model.UserModel
 import com.example.aplicacao.model.VideoModel
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import np.com.bimalkafle.miniclip.R
@@ -35,6 +38,13 @@ class VideoListAdapter(
                                 RequestOptions().placeholder(R.drawable.icon_profile)
                             )
                             .into(binding.profileIcon)
+
+                        binding.userDetailLayout.setOnClickListener {
+                            val intent = Intent(binding.userDetailLayout.context, ProfileActivity::class.java)
+                            intent.putExtra("profile_user_id",id )
+                            binding.userDetailLayout.context.startActivity(intent)
+                        }
+
                     }
                 }
 

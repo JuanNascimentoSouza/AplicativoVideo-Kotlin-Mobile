@@ -45,7 +45,6 @@ class ProfileActivity : AppCompatActivity() {
         }
 
         if(profileUserId==currentUserId){
-            //CUrrent user profile
             binding.profileBtn.text = "Logout"
             binding.profileBtn.setOnClickListener {
                 logout()
@@ -74,7 +73,6 @@ class ProfileActivity : AppCompatActivity() {
                     currentUserModel.followingList.remove(profileUserId)
                     binding.profileBtn.text = "Follow"
                 }else{
-                    //follow user
                     profileUserModel.followerList.add(currentUserId)
                     currentUserModel.followingList.add(profileUserId)
                     binding.profileBtn.text = "Unfollow"
